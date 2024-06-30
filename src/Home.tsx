@@ -15,7 +15,7 @@ if (query.trim().length > 2) {
   setError("Merci de tapez un mot-clé de 3 caractères minimum")
 } // Si le champ est vide ou trop court on affiche une erreur
 
-const url = `http://www.omdbapi.com/?apikey=3a097856&s=${query}`
+const url = `https://www.omdbapi.com/?apikey=3a097856&s=${query}`
 try {
   const res = await fetch(url) // On fetch l'API OMDB
   const data = await res.json() // On récupère les données et les converti
